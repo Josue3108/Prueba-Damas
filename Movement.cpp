@@ -34,66 +34,96 @@ list<int> Movement(Dama ex, int com, int r){
             for(int i = 0; i < 2; i++){
                 if(i == 0){
                     list<int> pos = SearchRightBack(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else{
                     list<int> pos = SearchRight(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }else {
+                        list<int> l = {-1, -1};
+                        return l;
+                    }
                 }
             }
         }else if(ex.column == 7){
             for(int i = 0; i < 2; i++){
                 if(i == 0){
                     list<int> pos = SearchLeftBack(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else{
                     list<int> pos = SearchLeft(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }else{
+                        list<int> l = {-1,-1};
+                        return l;
                 }
             }
         }else{
             for(int i = 0; i < 4; i++){
                 if(i == 0){
                     list<int> pos = SearchLeftBack(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else if(i == 1){
                     list<int> pos = SearchRightBack(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else if (i == 2){
                     list<int> pos = SearchLeft(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else{
                     list<int> pos = SearchRight(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }else {
+                        list<int> l = {-1, -1};
+                        return l;
+                    }
                 }
             }
 
         }
     }else{
-        if(ex.column == 0){
-            //row
+        if(ex.column == 0){//row
             list<int> pos = SearchRight(column, row, false);
-            //return pos
+            if(pos.front() != -1){
+                return pos;
+            }else {
+                list<int> l = {-1, -1};
+                return l;
+            }
         }else if(ex.column == 7){
             list<int> pos = SearchLeft(column, row, false);
-            //return pos
+            if(pos.front() != -1){
+                return pos;
+            }else {
+                list<int> l = {-1, -1};
+                return l;
+            }
         }else{
             for(int i = 0; i < 2; i++){
                 if(i == 0){
                     list<int> pos = SearchLeft(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }
                 }else{
                     list<int> pos = SearchRight(column, row, false);
-                    //Search in pos for -1 
-                    //Case isn't one return pos
+                    if(pos.front() != -1){
+                        return pos;
+                    }else {
+                        list<int> l = {-1, -1};
+                        return l;
+                    }
                 }
             }
 
