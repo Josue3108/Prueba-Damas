@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Checker::Checker(int c, int r, float cr){
+Dama::Dama(int c, int r, float cr){
     column = c;
     row = r;
     crowned = cr;

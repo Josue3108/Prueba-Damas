@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Dama.cpp"
+#include "Dama.h"
 #include <list>
 
 using namespace std;
@@ -7,7 +7,7 @@ using namespace std;
 int matrix [8][8];
 
 int Init(){
-    list<Checker> myList;
+    list<Dama> myList;
     for(int a = 1; a <= 3; a++){
 
     };
@@ -15,7 +15,7 @@ int Init(){
     return 0;
 };
 
-int SearchMovement(list<Checker> & ml){
+int SearchMovement(list<Dama> & ml){
     //Recorrer la lista
     //for(lsita hasta el final){
         //list<int> ola = Movement(Checker, cherker.column, checker.row)
@@ -26,7 +26,7 @@ int SearchMovement(list<Checker> & ml){
     //}
 };
 
-list<int> Movement(Checker ex, int com, int r){
+list<int> Movement(Dama ex, int com, int r){
     int column = com;
     int row = r;
     if (ex.crowned){
@@ -106,22 +106,28 @@ list<int> SearchRight(int c, int r, float e ){
     int row = r + 1;
     if(e){
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else{
-            //create the list
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }else{
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else if(matrix[column][row] == 2){
-            // list<int> sasa = SearchRight(column, row, true)
-            //Delete Checker
-            //return sasa
+            list<int> l = SearchRight(column, row, true);
+            if(l.front() != -1){
+                //Delete checker
+                return l;
+            }else{
+                list<int> l = {-1,-1};
+                return l;
+            }
         }else{
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }
 }
@@ -131,22 +137,28 @@ list<int> SearchLeft(int c, int r, float e ){
     int row = r - 1;
     if(e){
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else{
-            //create the list
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }else{
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else if(matrix[column][row] == 2){
-            // list<int> sasa = SearchLeft(column, row, true)
-            //Delete Checker
-            //return sasa
+            list<int> l = SearchRight(column, row, true);
+            if(l.front() != -1){
+                //Delete checker
+                return l;
+            }else{
+                list<int> l = {-1,-1};
+                return l;
+            }
         }else{
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }
 }
@@ -156,22 +168,28 @@ list<int> SearchRightBack(int c, int r, float e ){
     int row = r + 1;
     if(e){
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else{
-            //create the list
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }else{
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else if(matrix[column][row] == 2){
-            // list<int> sasa = SearchRight(column, row, true)
-            //Delete Checker
-            //return sasa
+            list<int> l = SearchRight(column, row, true);
+            if(l.front() != -1){
+                //Delete checker
+                return l;
+            }else{
+                list<int> l = {-1,-1};
+                return l;
+            }
         }else{
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }
 }
@@ -181,22 +199,28 @@ list<int> SearchLeftBack(int c, int r, float e ){
     int row = r - 1;
     if(e){
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else{
-            //create the list
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }else{
         if(matrix[column][row] == 0){
-            //create the list
-            //return list<column><row>
+            list<int> l = {column,row}; 
+            return l;
         }else if(matrix[column][row] == 2){
-            // list<int> sasa = SearchLeft(column, row, true)
-            //Delete Checker
-            //return sasa
+            list<int> l = SearchRight(column, row, true);
+            if(l.front() != -1){
+                //Delete checker
+                return l;
+            }else{
+                list<int> l = {-1,-1};
+                return l;
+            }
         }else{
-            //return list<-1><-1>
+            list<int> l = {-1,-1};
+            return l;
         }
     }
 }

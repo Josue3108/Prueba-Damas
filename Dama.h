@@ -2,12 +2,12 @@
 
 using namespace std;
 
-class Checker
+class Dama
 {
 public:
     int column;
     int row;
     float crowned;
 
-    Checker(int c, int r, float cr);
+    Dama(int c, int r, float cr);
 };
