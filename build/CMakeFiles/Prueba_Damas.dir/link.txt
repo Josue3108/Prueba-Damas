@@ -1,0 +1,3 @@
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Prueba_Damas.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\Prueba_Damas.dir/objects.a @CMakeFiles\Prueba_Damas.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\Prueba_Damas.dir/objects.a -Wl,--no-whole-archive -o Prueba_Damas.exe -Wl,--out-implib,libPrueba_Damas.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Prueba_Damas.dir\linklibs.rsp

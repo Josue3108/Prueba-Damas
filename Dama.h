@@ -9,5 +9,9 @@ public:
     int row;
     float crowned;
 
-    Dama(int c, int r, float cr);
+    Dama(int c, int r);
+
+    void UpdateCoords(int c, int r);
+
+    ToCrown(float cr);
 };

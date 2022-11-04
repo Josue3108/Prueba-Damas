@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Prueba_Damas.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\Prueba_Damas.dir\\Dama.obj -c \"C:\\Users\\yangr\\Desktop\\Git Hub\\Prueba-Damas\\Dama.cpp\"",
+  "file": "C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/Dama.cpp"
+},
+{
+  "directory": "C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/Prueba_Damas.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\Prueba_Damas.dir\\Movement.obj -c \"C:\\Users\\yangr\\Desktop\\Git Hub\\Prueba-Damas\\Movement.cpp\"",
+  "file": "C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/Movement.cpp"
+}
+]

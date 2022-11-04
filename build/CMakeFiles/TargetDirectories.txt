@@ -1,0 +1,3 @@
+C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/build/CMakeFiles/Prueba_Damas.dir
+C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/build/CMakeFiles/edit_cache.dir
+C:/Users/yangr/Desktop/Git Hub/Prueba-Damas/build/CMakeFiles/rebuild_cache.dir

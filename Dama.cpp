@@ -3,8 +3,17 @@
 
 using namespace std;
 
-Dama::Dama(int c, int r, float cr){
+Dama::Dama(int c, int r){
     column = c;
     row = r;
-    crowned = cr;
+    crowned = false;
 };
+
+Dama::UpdateCoords(int c, int r) {
+    column =  c;
+    row = r;
+}
+
+int Dama::ToCrown(float cr) {
+    crowned = cr;
+}
